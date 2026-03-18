@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SOS First - Evoluindo para algo maior. Em breve novidades.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>SOS First | Evoluindo</title>
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen Cinematográfico -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <span class="logo-text">SOS</span>
+                <span class="logo-accent">FIRST</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+            </div>
+            <div class="loading-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Inicializando sistema...</span>
+            </div>
+            <div class="loading-particles"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Customizado -->
+    <div class="cursor cursor-main"></div>
+    <div class="cursor cursor-trail"></div>
+    <div class="cursor cursor-glow"></div>
+
+    <!-- Background Vivo - Canvas de Partículas -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+    
+    <!-- Grid Overlay Cyber -->
+    <div class="cyber-grid">
+        <div class="grid-lines horizontal"></div>
+        <div class="grid-lines vertical"></div>
+    </div>
+
+    <!-- Gradient Orbs Animados -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <!-- Badge de Status -->
+                <div class="status-badge" data-animate="fade-up" data-delay="0.2">
+                    <span class="badge-pulse"></span>
+                    <span class="badge-text">Em Evolução</span>
+                </div>
+
+                <!-- Logo Principal -->
+                <div class="hero-logo" data-animate="fade-up" data-delay="0.4">
+                    <h1 class="logo-main">
+                        <span class="logo-sos">SOS</span>
+                        <span class="logo-divider"></span>
+                        <span class="logo-first">FIRST</span>
+                    </h1>
+                    <div class="logo-glow"></div>
+                </div>
+
+                <!-- Tagline Impactante -->
+                <div class="tagline-container" data-animate="fade-up" data-delay="0.6">
+                    <p class="tagline">
+                        <span class="tagline-word">Não</span>
+                        <span class="tagline-word">acabou.</span>
+                        <span class="tagline-word highlight">Evoluiu.</span>
+                    </p>
+                </div>
+
+                <!-- Mensagem Principal -->
+                <div class="message-container" data-animate="fade-up" data-delay="0.8">
+                    <div class="message-card glass-card">
+                        <div class="card-accent"></div>
+                        <p class="message-text">
+                            Estamos trabalhando intensamente nos bastidores para tornar o SOS First 
+                            <strong>independente</strong> e <strong>maior</strong> do que nunca.
+                        </p>
+                        <div class="message-divider"></div>
+                        <p class="message-subtext">
+                            Em breve, novas informações, funcionalidades e anúncios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Indicador Visual -->
+                <div class="visual-indicator" data-animate="fade-up" data-delay="1.0">
+                    <div class="pulse-ring">
+                        <div class="pulse-ring-inner"></div>
+                        <div class="pulse-ring-outer"></div>
+                    </div>
+                    <span class="indicator-text">Aguarde</span>
+                </div>
+
+                <!-- Footer Minimalista -->
+                <footer class="hero-footer" data-animate="fade-up" data-delay="1.2">
+                    <div class="footer-line"></div>
+                    <p class="footer-text">O início de algo gigante</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Efeito de Scanline (opcional, estilo cyber) -->
+    <div class="scanline-overlay"></div>
+
+    <!-- Vignette Effect -->
+    <div class="vignette-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
